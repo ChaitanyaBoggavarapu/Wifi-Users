@@ -13,3 +13,5 @@ driver.switch_to.frame("page")
 b = driver.page_source
 
 result = b.find('<span id="AttachedDevices-condition" class="Condition-normal">')
+
+#Result gives the postion of the span id
