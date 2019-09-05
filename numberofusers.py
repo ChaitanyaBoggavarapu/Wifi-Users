@@ -1,7 +1,13 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+import schedule
+
+def job():
     numberofusers = 0
     driver = webdriver.Chrome()
     #driver.get("http://www.python.org")
-    driver.get("http://admin:Chennaisuperkings7@routerlogin.net/")
+    driver.get("http://sername:password@routerlogin.net/")
     
     #a = driver.find_element_by_id("AttachedDevices-condition")
     
@@ -22,3 +28,8 @@
     driver.implicitly_wait(15)
     
     driver.quit()
+schedule.every(2).minutes.do(job)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
