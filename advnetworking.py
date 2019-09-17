@@ -20,7 +20,7 @@ def job():
     currentDT = datetime.datetime.now()
     driver = webdriver.Chrome()
     #driver.get("http://www.python.org")
-    driver.get("https://admin:Chennaisuperkings7@routerlogin.net/")
+    driver.get("https://admin:Password@routerlogin.net/")
     
     #a = driver.find_element_by_id("AttachedDevices-condition")
     
